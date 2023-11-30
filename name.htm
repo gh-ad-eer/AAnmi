@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<link rel="stylesheet" type="text/CSS" href="disainnn.css">
+<meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>أسماء الفريق</title>
+
+
+
+</head>
+
+
+<body><div class="smoly">
+    <ul class="nav">
+        <li><a href="home.htm">الصفحه الرئيسيه</a></li>
+        <li> <a href="species.htm">التصنيفات</a></li>
+        <li> <a href="nomination.htm">الترشيحات</a></li>
+        <li><a href="chaid.htm">أنميات اطفال</a></li>
+        <li><a href="name.htm">الاسماء</a></li>
+         <li><a href="form.htm">الاسئلة والاستفسارات</a></li> 
+    </ul></div>
+
+    <div class="nemo">
+   <h1 style="text-align: center;">الفريق</h1>
+    <ul id="nameList" >
+        <li >غدير عبدالرحمن الشهراني 431001336</li>
+        <li>ذكرى سلمان العطوي431003244</li>
+        <li>زينب زعل العطوي431006803</li>
+        <li> ابرار موسى العنزي431006594</li>
+    </ul>
+ </div>
+
+    <script>
+        window.onload = function() {
+            shuffleList();
+        };
+        
+        function shuffleList() {
+            var ul = document.getElementById('nameList');
+            for (var i = ul.children.length; i >= 0; i--) {
+                ul.appendChild(ul.children[Math.random() * i | 0]);
+            }
+        }
+        </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+<head>
+    <link rel="stylesheet" type="text/CSS" href="disainnn.css">
+    <meta charset="UTF-8" dir="ltr">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css">
+        <title>تواصل معنا</title>
+</head>
+<body><div class="smoly">
+    <ul class="nav">
+        <li><a href="home.htm">الصفحه الرئيسيه</a></li>
+        <li> <a href="species.htm">التصنيفات</a></li>
+        <li> <a href="nomination.htm">الترشيحات</a></li>
+        <li><a href="chaid.htm">أنميات اطفال</a></li>
+        <li><a href="name.htm">الاسماء</a></li>
+         <li><a href="form.htm">الاسئلة والاستفسارات</a></li>  
+    </ul></div>
+
+        <div class="container">
+            <div class="content">
+                <div class="left-side">
+                    <h3 style="font-size: 25px; font-family:sans-serif;color: rgb(232, 58, 139);"> :تواصل معنا</h3>
+                    <div class="address details">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="topic">العنوان</div>
+                        <div class="text-one">تبوك,السعودية</div>
+                    </div>
+                    <div class="phone details">
+                        <i class="fas fa-phone-alt"></i>
+                        <div class="topic">رقم الهاتف</div>
+                        <div class="text-one">+966 45 235 8647</div>  
+                    </div>
+                    <div class="email details">
+                      <i class="fa fa-envelope"></i>
+                        <div class="topic">إيميل</div>
+                        <div class="text-one">gigyo@gmail.com</div>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="topic-text">أكتب ملاحظاتك واستفساراتك</div>
+                    <p>اذا كان لديك اي سوال</p>
+                    <form action="https://formspree.io/f/xwkdjajd" method="post">
+                        <div class="input-box">
+                            <input type="text" name="name" placeholder="أدخل اسمك " required>
+                        </div>
+                        <div class="input-box">
+                            <input type="email" name="email" placeholder="أدخل إيميلك" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required>
+                        </div>
+                        <div class="input-box  message-box">
+                            <textarea name="message" required placeholder=" ادخل استفساراتك"></textarea>
+                        </div>
+                        <div class="button">
+                            <input type="submit" value="إرسال" >
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <script src="Contacts-script.js">
+            document.querySelector('form').addEventListener('submit', function (event) {
+    event.preventDefault(); 
+
+  
+    alert('Form submitted successfully!');
+})
+        </script>
+    
+</body>
+</html>
